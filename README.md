@@ -54,14 +54,14 @@ must_have=(
 
 # Setting Up NVIDIA with Hyprland
 ###### More details in the [Official Hyprland Wiki](https://wiki.hyprland.org/Nvidia/)
-*Note*
-`nvim` can be replace with a command-line text editor of your choice
+*Note*: `nvim` can be replace with a command-line text editor of your choice
 
 Install required dependancies:
 
 ```
 yay -S linux-headers nvidia-dkms qt5-wayland qt5ct libva libva-nvidia-driver-git
 ```
+
 
 Add `nvidia_drm.modeset=1` to the end of `GRUB_CMDLINE_LINUX_DEFAULT=` in `/etc/default/grub`
 
@@ -73,6 +73,7 @@ sudo nvim /etc/default/grub
 ```
 
 For `systemd-boot` see [here](http://wiki.hyprland.org/Nvidia/#how-to-get-hyprland-to-possibly-work-on-nvidia).
+
 
 Add to 'modules' in '/etc/mkinitcpio.conf':
 
