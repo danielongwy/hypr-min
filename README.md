@@ -53,12 +53,24 @@ must_have=(
 
 
 # Setting Up NVIDIA with Hyprland
-#### https://wiki.hyprland.org/Nvidia/
+###### More details in the [Official Hyprland Wiki](https://wiki.hyprland.org/Nvidia/)
 
-> yay -S linux-headers nvidia-dkms qt5-wayland qt5ct libva libva-nvidia-driver-git
 
-## Add to 'modules' in '/etc/mkinitcpio.conf'
-> MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)
+Install required dependancies:
+
+```
+yay -S linux-headers nvidia-dkms qt5-wayland qt5ct libva libva-nvidia-driver-git
+```
+
+Add to 'modules' in '/etc/mkinitcpio.conf':
+```
+MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)
+```
+
+`nvim` can be replace with a command-line text editor of your choice
+```
+sudo nvim /etc/mkinitcpio.conf
+```
 
 ## Generate a new initramfs image (Must have 'linux-headers' package)
 > sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img
