@@ -1,4 +1,4 @@
-# Minimal installation of Hyprland(Repo) + Arch Linux
+## Minimal installation of Hyprland(Repo) + Arch Linux
 
 
 - Terminal: kitty
@@ -27,14 +27,18 @@
 
 
 
-## Other packages:
+### Other packages:
 - qt5-wayland
 - qt6-wayland
 - qt5ct
 - qt6ct 
 - xdg-desktop-portal-gtk (Reccomended for `file picker` in Hyprland Wiki)
 
+- bluetooth packages (? - required more testing)
 
+
+<br/>
+## Font Configurations
 
 must_have=(
     pipewire
@@ -46,12 +50,16 @@ must_have=(
     xdg-desktop-portal-gtk
 )
 
-# Authentication Agent 
-> sudo pacman -S polkit-kde-agent
-## Export to hyprland conf
-> exec-once=/usr/lib/polkit-kde-authentication-agent-1
+<br/>
+<br/>
+### Things to add to hypland.conf (? - Move section elsewhere)
+```
+exec-once=/usr/lib/polkit-kde-authentication-agent-1
+```
 
 
+<br/>
+<br/>
 # Setting Up NVIDIA with Hyprland
 ###### More details in the [Official Hyprland Wiki](https://wiki.hyprland.org/Nvidia/)
 *Note*: `nvim` can be replace with a command-line text editor of your choice
@@ -103,27 +111,15 @@ cat /etc/modprobe.d/nvidia.conf
 
 
 Export these variables to hyprland.conf
+
 ```
 env = LIBVA_DRIVER_NAME,nvidia
-```
-```
 env = XDG_SESSION_TYPE,wayland
-```
-```
 env = GBM_BACKEND,nvidia-drm
-```
-```
 env = __GLX_VENDOR_LIBRARY_NAME,nvidia
-```
-```
 env = WLR_NO_HARDWARE_CURSORS,1
 ```
 
-or
-
-```
-echo "env = LIBVA_DRIVER_NAME,nvidia\n env = XDG_SESSION_TYPE,wayland\n env = GBM_BACKEND,nvidia-drm\n env = __GLX_VENDOR_LIBRARY_NAME,nvidia\n env = WLR_NO_HARDWARE_CURSORS,1" >> /$HOME/.config/hypr/hyprland.conf
-```
 
 Once done reboot your system
 ```
