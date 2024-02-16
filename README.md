@@ -27,7 +27,8 @@
 
 
 
-### Other packages:
+#### Other packages:
+
 - qt5-wayland
 - qt6-wayland
 - qt5ct
@@ -51,9 +52,9 @@ must_have=(
     xdg-desktop-portal-gtk
 )
 
-<br/><br/>
+<br/>
 
-### Things to add to hypland.conf (? - Move section elsewhere)
+#### Things to add to hypland.conf (? - Move section elsewhere)
 ```
 exec-once=/usr/lib/polkit-kde-authentication-agent-1
 ```
@@ -61,7 +62,7 @@ exec-once=/usr/lib/polkit-kde-authentication-agent-1
 
 <br/><br/>
 
-# Setting Up NVIDIA with Hyprland
+## Setting Up NVIDIA with Hyprland
 ###### More details in the [Official Hyprland Wiki](https://wiki.hyprland.org/Nvidia/)
 *Note*: `nvim` can be replace with a command-line text editor of your choice
 
