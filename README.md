@@ -1,37 +1,40 @@
-Minimal installation of Hyprland(Repo) + Arch Linux
+# Minimal installation of Hyprland(Repo) + Arch Linux
 
-# Terminal: kitty
-# File Manager: dolphin
-# Unix Text Editor: neovim
-# Wallpaper: Hyprpaper
-# Status Bar: Waybar
-# Notification Daemon: Dunst
-# Terminal: kitty
-# Logout: wlogout 
-# Image viewer: imv
-# Video Player: mpv
-# PDF Viewer: ?
-# Color Picker: hyprpicker
-# Screenshot : ?
-# screenlocker: swaylock-effects
-# Audio scripts ecrip murpy
-# Audio:
-    # pipeware
-    # wireplumber
-# Authentication Agent: 
-    # polkit-kde-agent
 
-# Misc
-    git
-    yay
-# Qt Wayland Support:
-# qt5-wayland
-# qt6-wayland
+- Terminal: kitty
+- File Manager: dolphin
+- Unix Text Editor: neovim
+- Wallpaper: Hyprpaper
+- Status Bar: Waybar
+- Notification Daemon: Dunst
+- Terminal: kitty
+- Logout: wlogout 
+- Image viewer: imv
+- Video Player: mpv
+- PDF Viewer: ?
+- Color Picker: hyprpicker
+- Screenshot : ?
+- screenlocker: swaylock-effects
+- Audio scripts ecrip murpy
+- Audio:
+    - pipeware
+    - wireplumber
+- Authentication Agent: polkit-kde-agent
+- Misc
+    - git
+    - yay
+- Desktop Portal: xdg-desktop-portal-hyprland
 
-# QT Settings: qt5ct
 
-#Desktop Portal: xdg-desktop-portal-hyprland
-# File picker: xdg-desktop-portal-gtk
+
+## Other packages:
+- qt5-wayland
+- qt6-wayland
+- qt5ct
+- qt6ct 
+- xdg-desktop-portal-gtk (Reccomended for `file picker` in Hyprland Wiki)
+
+
 
 must_have=(
     pipewire
