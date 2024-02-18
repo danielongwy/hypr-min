@@ -7,6 +7,6 @@ cp -r /etc/xdg/waybar/ $HOME/.config/
 # Update to migrate existing waybar
 
 echo 'Migrating existing hypr-min config files'
-cp -r ./Configs/hypr/ $HOME/.config/
+cp -r ../Configs/hypr/ $HOME/.config/
 
 echo 'finished'

@@ -24,7 +24,7 @@ hyprland_core=(
 for ea in ${hyprland_core[@]}; do
 	echo
 	echo 'Installing' $ea
-	sudo pacman -S --needed $str	
+	sudo pacman -S --needed $ea
 done
 
 # Run external script to install yay

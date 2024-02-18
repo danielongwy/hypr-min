@@ -2,7 +2,7 @@
 
 
 - Terminal: kitty
-- File Manager: dolphin
+- File Manager: thunar
 - Unix Text Editor: neovim
 - Wallpaper: Hyprpaper
 - Status Bar: Waybar
@@ -12,7 +12,7 @@
 - Image viewer: imv
 - Video Player: mpv
 - PDF Viewer: ?
-- Color Picker: hyprpicker
+- Color Picker: hyprpicker-git
 - Screenshot : ?
 - screenlocker: swaylock-effects
 - Audio scripts ecrip murpy
@@ -24,8 +24,8 @@
     - git
     - yay
 - Desktop Portal: xdg-desktop-portal-hyprland
-
-
+- Shell Prompt: starship + bash
+- Task Manager: btop
 
 #### Other packages:
 
@@ -34,13 +34,43 @@
 - qt5ct
 - qt6ct 
 - xdg-desktop-portal-gtk (Reccomended for `file picker` in Hyprland Wiki)
-
+- hasci a
 - bluetooth packages (? - required more testing)
+- wl-clipboard : Enable *neovim* system compatible clipboard
+- htop : Process Manager
+- xdg-user-dirs : File manager support for common directories
+- udiskie (? double check if needed for mounting)
+- nwg-look-bin
+- kvantum
 
 
+#### File Manager (Thunar)
+- thunar
+- thunar-volman, gvfs : (Support Thunar for mounting internal device)
+- thunar-archieve-plugins & xarchiver (Work hand in hand)
 <br/>
 
-## Font Configurations
+## Theming
+
+#### Icons
+- papirus-icon-theme
+
+
+#### Font Configurations
+- noto-fonts-cjk
+- ttf-jetbrains-mono-nerd
+- ttf-firacode-nerd
+
+**APPS**
+- telegram-desktop
+- obsidian
+
+ClipBord:
+TODO https://wiki.hyprland.org/Useful-Utilities/Clipboard-Managers/
+
+Debug Tools (not needed for main install):
+- -xorg-eyes 
+
 
 must_have=(
     pipewire
@@ -130,3 +160,16 @@ systemctl reboot
 ```
 
 
+#### Future Reference/Personalisation
+- [Auto-login on TTY1](https://wiki.archlinux.org/title/Getty#Automatic_login_to_virtual_console)
+
+
+
+[comment]: <> (This is a comment, it will not be included)
+[comment]: <> (in  the output file unless you use it in)
+[comment]: <> (a reference style link.)
+<!-- your comment -->
+[//]: <> (This is also a comment.)
+[//]: # (This may be the most platform independent comment)
+# References:
+https://github.com/astonish-g/hypr-catppuccin-dotfiles/tree/main
