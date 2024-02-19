@@ -1,24 +1,24 @@
 ## Minimal installation of Hyprland(Repo) + Arch Linux
 
 
-- Terminal: **kitty**
-- File Manager: thunar
-- Unix Text Editor: neovim
-- Wallpaper: Hyprpaper
-- Status Bar: Waybar
-- Notification Daemon: Dunst
-- Logout: wlogout 
-- Image viewer: imv
-- Video Player: mpv
-- PDF Viewer: ?
-- Color Picker: hyprpicker-git
-- Screenshot : ?
-- screenlocker: ? swaylock-effects
-- Audio: **pipeware** && **wireplumber**
+- Terminal:             **kitty**
+- File Manager:         thunar
+- Unix Text Editor:     neovim
+- Wallpaper:            Hyprpaper
+- Status Bar:           Waybar
+- Notification Daemon:  Dunst
+- Logout:               wlogout 
+- Image viewer:         imv
+- Video Player:         mpv
+- PDF Viewer:           ?
+- Color Picker:         hyprpicker-git
+- Screenshot :          ?
+- screenlocker:         ? swaylock-effects
+- Audio:                **pipeware** && **wireplumber**
 - Authentication Agent: **polkit-kde-agent**
-- Shell: **bash + starship**
-- Task Manager: **btop**
-- Desktop Portal: xdg-desktop-portal-hyprland
+- Shell:                **bash + starship**
+- Task Manager:         **btop**
+- Desktop Portal:       xdg-desktop-portal-hyprland
 
 #### Other packages:
 - git
