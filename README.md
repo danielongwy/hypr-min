@@ -98,10 +98,14 @@ exec-once=/usr/lib/polkit-kde-authentication-agent-1
 
 Install required dependancies
 
+**Step 1**
+
 ```
 yay -S linux-headers nvidia-dkms qt5-wayland qt5ct libva libva-nvidia-driver-git
 ```
 <br/>
+
+**Step 2**
 
 Add `nvidia_drm.modeset=1` to the end of `GRUB_CMDLINE_LINUX_DEFAULT=` in `/etc/default/grub`
 
@@ -119,6 +123,8 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 For `systemd-boot` see [here](http://wiki.hyprland.org/Nvidia/#how-to-get-hyprland-to-possibly-work-on-nvidia).
 
 <br/>
+
+**Step 3**
 
 Add to `modules` in `/etc/mkinitcpio.conf`
 
@@ -147,7 +153,7 @@ cat /etc/modprobe.d/nvidia.conf
 ```
 <br/>
 
-### Step 3
+**Step 4**
 
 Export these variables to *hyprland.conf*
 
