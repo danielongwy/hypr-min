@@ -32,6 +32,7 @@ hyprland_core=(
 	thunar
 	neovim
 	firefox
+	rofi
 	hyprpaper
 	waybar
 	dunst
@@ -59,7 +60,7 @@ themeing=(
 	noto-fonts-emoji
 	noto-fonts-cjk
 	ttf-firacode-nerd
-	)
+)
 
 
 
