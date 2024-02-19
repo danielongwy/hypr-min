@@ -111,10 +111,16 @@ sudo nvim /etc/default/grub
 ```
 nvidia_drm.modeset=1
 ```
+
+Rebuild GRUB
+```
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
 For `systemd-boot` see [here](http://wiki.hyprland.org/Nvidia/#how-to-get-hyprland-to-possibly-work-on-nvidia).
+
 <br/>
 
-Add to 'modules' in '/etc/mkinitcpio.conf':
+Add to 'modules' in **/etc/mkinitcpio.conf**
 
 ```
 sudo nvim /etc/mkinitcpio.conf
@@ -124,7 +130,7 @@ MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)
 ```
 <br/>
 
-Generate a new initramfs image (Must have `linux-headers` package installed):
+Generate a new initramfs image (Must have `linux-headers` package installed)
 
 ```
 sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img
@@ -159,7 +165,6 @@ Once done reboot your system
 systemctl reboot
 
 ```
-
 
 #### Future Reference/Personalisation
 - [Auto-login on TTY1](https://wiki.archlinux.org/title/Getty#Automatic_login_to_virtual_console)
