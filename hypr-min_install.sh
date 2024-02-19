@@ -11,56 +11,85 @@ echo 'Installing hypr-min'
 
 sudo pacman -Syu
 
+
+# Install yay (external script)
+source ./scripts/install_yay.sh
+supporting_packages=(
+	qt5-wayland
+	qt6-wayland
+	qt5ct
+	qt6ct
+	xdg-desktop-portal-hyprland
+	xdg-desktop-portal-gtk
+	xdg-users-dirs
+	pipwire-jack
+	)
+
 hyprland_core=(
+	git
 	hyprland
 	kitty
-	git
-	dolphin
+	thunar
 	neovim
 	firefox
+	hyprpaper
+	waybar
+	dunst
+	imv
+	mpv
+	pipwire
+	wireplumber
+	btop
+	polkit-kde-agent
+	starship
 )
 
+core_support=(
+	thunar-volman
+	thunar-archieve-plugins
+	gvfs
+	xarchiever
+	tumbler
+)
+
+themeing=(
+	nwg-look-bin
+	kvantum
+	papirus-icon-theme
+	noto-fonts-emoji
+	noto-fonts-cjk
+	ttf-firacode-nerd
+	)
+
+
+
+
+for ea in ${supporting_packages[@]}; do
+	echo
+	echo 'Installing' $ea
+	yay -S --needed $ea
+done
 
 for ea in ${hyprland_core[@]}; do
 	echo
 	echo 'Installing' $ea
-	sudo pacman -S --needed $ea
+	yay -S --needed $ea
 done
-
-# Run external script to install yay
-source ./Scripts/install_yay.sh
-
-# Hyprland Must Haves
-# Portal Ref: https://wiki.hyprland.org/0.22.0beta/Useful-Utilities/Hyprland-desktop-portal/
-must_have=(
-	dunst
-	pipewire
-	wireplumber
-	xdg-desktop-portal-hyprland
-	polkit-kde-agent
-	qt5-wayland
-	qt6-wayland
-)
-
-for ea in ${must_have[@]}; do
+for ea in ${core_support[@]}; do
+	echo
+	echo 'Installing' $ea
 	yay -S --needed $ea
 done
 
-# Add clipboard manager
-optional_cores=(
-	qt5ct
-	waybar
-	hyprpaper
-	hyprpicker
-	udiskie
-	rofi
-)
 
-for ea in ${optional_cores[@]}; do
+for ea in ${themeing[@]}; do
+	echo
+	echo 'Installing' $ea
 	yay -S --needed $ea
 done
+
 
 # Run conf migration
-cd
-cd hypr-min
-source ./Scripts/dot_config_migration.sh
+source ./scripts/dot_config_migration.sh
+
+echo 'install complete, run hyprland'

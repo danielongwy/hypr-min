@@ -3,10 +3,10 @@
 echo 'Running config migration'
 
 echo 'Copying default waybar config files.'
-cp -r /etc/xdg/waybar/ $HOME/.config/
-# Update to migrate existing waybar
+# cp -r /etc/xdg/waybar/ $HOME/.config/
+cp -r .config/waybar/ $HOME/.config/
 
 echo 'Migrating existing hypr-min config files'
-cp -r ../Configs/hypr/ $HOME/.config/
+cp -r .config/hypr/ $HOME/.config/
 
 echo 'finished'
