@@ -11,9 +11,9 @@ echo 'Installing hypr-min'
 
 sudo pacman -Syu
 
-
 # Install yay (external script)
 source ./scripts/install_yay.sh
+
 supporting_packages=(
 	qt5-wayland
 	qt6-wayland
@@ -22,7 +22,7 @@ supporting_packages=(
 	xdg-desktop-portal-hyprland
 	xdg-desktop-portal-gtk
 	xdg-users-dirs
-	pipwire-jack
+	pipewire-jack
 	)
 
 hyprland_core=(
@@ -48,7 +48,7 @@ core_support=(
 	thunar-volman
 	thunar-archieve-plugins
 	gvfs
-	xarchiever
+	xarchiver
 	tumbler
 )
 
@@ -67,26 +67,25 @@ themeing=(
 for ea in ${supporting_packages[@]}; do
 	echo
 	echo 'Installing' $ea
-	yay -S --needed $ea
+	yay -S --needed --noconfirm $ea
+done
+
+for ea in ${themeing[@]}; do
+	echo
+	yay -S --needed --noconfirm $ea
 done
 
 for ea in ${hyprland_core[@]}; do
 	echo
 	echo 'Installing' $ea
-	yay -S --needed $ea
+	yay -S --needed --noconfirm $ea
 done
 for ea in ${core_support[@]}; do
 	echo
 	echo 'Installing' $ea
-	yay -S --needed $ea
+	yay -S --needed --noconfirm $ea
 done
 
-
-for ea in ${themeing[@]}; do
-	echo
-	echo 'Installing' $ea
-	yay -S --needed $ea
-done
 
 
 # Run conf migration

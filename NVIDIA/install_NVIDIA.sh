@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yay -S --needed -noconfirm linux-headers nvidia-dkms qt5-wayland qt5ct libva libva-nvidia-driver-git
+yay -S --needed --noconfirm linux-headers nvidia-dkms qt5-wayland qt5ct libva libva-nvidia-driver-git
 
 
 initial_line='GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet"'
