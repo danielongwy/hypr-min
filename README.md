@@ -134,13 +134,15 @@ sudo nvim /etc/mkinitcpio.conf
 ```
 MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)
 ```
-<br/>
 
 Generate a new initramfs image (Must have `linux-headers` package installed)
 
 ```
 sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img
 ```
+<br/>
+
+**Step 4**
 
 Create a NVIDIA .conf file:
 ```
@@ -153,7 +155,7 @@ cat /etc/modprobe.d/nvidia.conf
 ```
 <br/>
 
-**Step 4**
+**Step 5**
 
 Export these variables to *hyprland.conf*
 
