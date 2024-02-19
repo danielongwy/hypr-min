@@ -20,6 +20,11 @@
 - Task Manager:         **btop**
 - Desktop Portal:       xdg-desktop-portal-hyprland
 
+|   Terminal   |  **kitty** |
+|:------------:|:----------:|
+| File Manager | **thunar** |
+|              |            |
+|              |            |
 #### Other packages:
 - git
 - yay
