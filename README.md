@@ -1,39 +1,31 @@
 ## Minimal installation of Hyprland(Repo) + Arch Linux
-
-
-- Terminal:             **kitty**
-- File Manager:         thunar
-- Unix Text Editor:     neovim
-- Wallpaper:            Hyprpaper
-- Status Bar:           Waybar
-- Notification Daemon:  Dunst
-- Logout:               wlogout 
-- Image viewer:         imv
-- Video Player:         mpv
-- PDF Viewer:           ?
-- Color Picker:         hyprpicker-git
-- Screenshot :          ?
-- screenlocker:         ? swaylock-effects
-- Audio:                **pipeware** && **wireplumber**
+#### Core Packages
+- Terminal: **kitty**
+- File Manager: **thunar**
+- Text Editor: **neovim**
+- Wallpaper: **hyprpaper**
+- Status Bar: **waybar**
+- Notification Daemon: **dunst**
+- Screenshot: **?**
+- Screenlocker: **swaylock-effects**
+- Logout Handler: **wlogout**
+- Image Viewer: **imv**
+- Video Player: **mpv**
+- PDF Viewer: **?**
+- Audio: **pipeware** && **wireplumber**
+- Shell: **bash** + **starship**
+- Task Manager: **btop**
 - Authentication Agent: **polkit-kde-agent**
-- Shell:                **bash + starship**
-- Task Manager:         **btop**
-- Desktop Portal:       xdg-desktop-portal-hyprland
 
-|:------------:|:----------:|
-|   Terminal   |  **kitty** |
-| File Manager | **thunar** |
-|  Text Editor | **neovim** |
-
-#### Other packages:
+#### Supporting Packages
 - git
 - yay
 - qt5-wayland
 - qt6-wayland
 - qt5ct
 - qt6ct 
+- xdg-desktop-portal-hyprland
 - xdg-desktop-portal-gtk (Reccomended for `file picker` in Hyprland Wiki)
-- hasci a
 - bluetooth packages (? - required more testing)
 - wl-clipboard : Enable *neovim* system compatible clipboard
 - htop : Process Manager
@@ -41,12 +33,14 @@
 - udiskie (? double check if needed for mounting)
 - nwg-look-bin
 - kvantum
+- hyprpicker-git
 
 
-#### File Manager (Thunar)
-- thunar
-- thunar-volman, gvfs : (Support Thunar for mounting internal device)
-- thunar-archieve-plugins & xarchiver (Work hand in hand)
+
+Thunar
+- thunar-volman, gvfs | Support for mounting devices
+- thunar-archieve-plugins & xarchiver | Allows for right-click extract functions
+- tumbler | Adds preview thumbnails to thunar
 <br/>
 
 ## Theming
@@ -54,13 +48,14 @@
 #### Icons
 - papirus-icon-theme
 
-
 #### Font Configurations
+- noto-fonts
+- noto-fonts-emoji
 - noto-fonts-cjk
 - ttf-jetbrains-mono-nerd
 - ttf-firacode-nerd
 
-**APPS**
+#### Applications
 - telegram-desktop
 - obsidian
 
@@ -70,16 +65,6 @@ TODO https://wiki.hyprland.org/Useful-Utilities/Clipboard-Managers/
 Debug Tools (not needed for main install):
 - -xorg-eyes 
 
-
-must_have=(
-    pipewire
-    wireplumber
-    polkit-kde-agent
-    qt5-wayland
-    qt6-wayland
-    xdg-desktop-portal-hyprland
-    xdg-desktop-portal-gtk
-)
 
 <br/>
 
