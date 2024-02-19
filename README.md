@@ -112,7 +112,7 @@ sudo nvim /etc/default/grub
 nvidia_drm.modeset=1
 ```
 
-Rebuild GRUB
+Rebuild *GRUB* with following command
 ```
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
@@ -120,7 +120,7 @@ For `systemd-boot` see [here](http://wiki.hyprland.org/Nvidia/#how-to-get-hyprla
 
 <br/>
 
-Add to 'modules' in **/etc/mkinitcpio.conf**
+Add to **modules** in **/etc/mkinitcpio.conf**
 
 ```
 sudo nvim /etc/mkinitcpio.conf
@@ -141,7 +141,7 @@ Create a NVIDIA .conf file:
 echo "options nvidia-drm modeset=1" | sudo tee /etc/modprobe.d/nvidia.conf
 ```
 
-and verify by running command below, output should be 'options nvidia-drm modeset=1'
+and verify by running command below, output should be **options nvidia-drm modeset=1**
 ```
 cat /etc/modprobe.d/nvidia.conf
 ```
@@ -149,7 +149,7 @@ cat /etc/modprobe.d/nvidia.conf
 
 
 
-Export these variables to hyprland.conf
+Export these variables to **hyprland.conf**
 
 ```
 env = LIBVA_DRIVER_NAME,nvidia
@@ -163,7 +163,6 @@ env = WLR_NO_HARDWARE_CURSORS,1
 Once done reboot your system
 ```
 systemctl reboot
-
 ```
 
 #### Future Reference/Personalisation
