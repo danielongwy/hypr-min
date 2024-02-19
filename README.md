@@ -1,34 +1,28 @@
 ## Minimal installation of Hyprland(Repo) + Arch Linux
 
 
-- Terminal: kitty
+- Terminal: **kitty**
 - File Manager: thunar
 - Unix Text Editor: neovim
 - Wallpaper: Hyprpaper
 - Status Bar: Waybar
 - Notification Daemon: Dunst
-- Terminal: kitty
 - Logout: wlogout 
 - Image viewer: imv
 - Video Player: mpv
 - PDF Viewer: ?
 - Color Picker: hyprpicker-git
 - Screenshot : ?
-- screenlocker: swaylock-effects
-- Audio scripts ecrip murpy
-- Audio:
-    - pipeware
-    - wireplumber
-- Authentication Agent: polkit-kde-agent
-- Misc
-    - git
-    - yay
+- screenlocker: ? swaylock-effects
+- Audio: **pipeware** && **wireplumber**
+- Authentication Agent: **polkit-kde-agent**
+- Shell: **bash + starship**
+- Task Manager: **btop**
 - Desktop Portal: xdg-desktop-portal-hyprland
-- Shell Prompt: starship + bash
-- Task Manager: btop
 
 #### Other packages:
-
+- git
+- yay
 - qt5-wayland
 - qt6-wayland
 - qt5ct
@@ -186,3 +180,4 @@ systemctl reboot
 [//]: # (This may be the most platform independent comment)
 ## References:
 https://github.com/astonish-g/hypr-catppuccin-dotfiles/tree/main
+https://github.com/ericmurphyxyz/dotfiles
