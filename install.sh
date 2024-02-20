@@ -21,7 +21,7 @@ supporting_packages=(
 	qt6ct
 	xdg-desktop-portal-hyprland
 	xdg-desktop-portal-gtk
-	xdg-users-dirs
+	xdg-user-dirs
 	pipewire-jack
 	)
 

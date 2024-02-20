@@ -1,5 +1,8 @@
-## Minimal installation of Hyprland(Repo) + Arch Linux
-#### Core Packages
+# Name
+Minimal installation of Hyprland(Repo) + Arch Linux
+
+# Features
+Core Packages
 - Terminal: **kitty**
 - File Manager: **thunar**
 - Text Editor: **neovim**
@@ -17,7 +20,7 @@
 - Task Manager: **btop**
 - Authentication Agent: **polkit-kde-agent**
 
-#### Supporting Packages
+Supporting Packages
 - git
 - yay
 - qt5-wayland
@@ -36,26 +39,28 @@
 - hyprpicker-git
 
 
-
 Thunar
 - thunar-volman, gvfs | Support for mounting devices
 - thunar-archieve-plugins & xarchiver | Allows for right-click extract functions
 - tumbler | Adds preview thumbnails to thunar
 <br/>
 
-## Theming
+# Installation
+`sh install.sh'
 
-#### Icons
+# Theming
+
+Icons
 - papirus-icon-theme
 
-#### Font Configurations
+Font Configurations
 - noto-fonts
 - noto-fonts-emoji
 - noto-fonts-cjk
 - ttf-jetbrains-mono-nerd
 - ttf-firacode-nerd
 
-#### Applications
+Applications
 - telegram-desktop
 - obsidian
 
@@ -68,6 +73,10 @@ Debug Tools (not needed for main install):
 
 <br/>
 
+
+
+
+# Important Notes
 #### Things to add to hypland.conf (? - Move section elsewhere)
 ```
 exec-once=/usr/lib/polkit-kde-authentication-agent-1
@@ -76,7 +85,7 @@ exec-once=/usr/lib/polkit-kde-authentication-agent-1
 
 <br/><br/>
 
-## Setting Up NVIDIA with Hyprland
+# Setting Up NVIDIA with Hyprland
 ###### More details in the [Official Hyprland Wiki](https://wiki.hyprland.org/Nvidia/)
 *Note*: `nvim` can be replace with a command-line text editor of your choice
 
