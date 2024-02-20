@@ -1,6 +1,12 @@
 # Name
 Minimal installation of Hyprland(Repo) + Arch Linux
 
+# Installation
+
+`sh install.sh`
+
+For nvidia see ....
+
 # Features
 Core Packages
 - Terminal: **kitty**
@@ -20,6 +26,23 @@ Core Packages
 - Task Manager: **btop**
 - Authentication Agent: **polkit-kde-agent**
 
+
+<details>
+<summary>
+Supporting Packages
+</summary>
+- git
+- yay
+- qt5-wayland
+- qt6-wayland
+- qt5ct
+- qt6ct 
+- xdg-desktop-portal-hyprland
+- xdg-desktop-portal-gtk (Reccomended for `file picker` in Hyprland Wiki)
+- bluetooth packages (? - required more testing)
+- wl-clipboard : Enable *neovim* system compatible clipboard
+- htop : Process Manager
+</details>
 Supporting Packages
 - git
 - yay
@@ -45,8 +68,6 @@ Thunar
 - tumbler | Adds preview thumbnails to thunar
 <br/>
 
-# Installation
-`sh install.sh'
 
 # Theming
 
