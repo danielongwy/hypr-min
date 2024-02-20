@@ -29,20 +29,22 @@ Core Packages
 
 <details>
 <summary>
-Supporting Packages
+    Supporting Packages
 </summary>
-- git
-- yay
-- qt5-wayland
-- qt6-wayland
-- qt5ct
-- qt6ct 
-- xdg-desktop-portal-hyprland
-- xdg-desktop-portal-gtk (Reccomended for `file picker` in Hyprland Wiki)
-- bluetooth packages (? - required more testing)
-- wl-clipboard : Enable *neovim* system compatible clipboard
-- htop : Process Manager
+    - git
+    - yay
+    - qt5-wayland
+    - qt6-wayland
+    - qt5ct
+    - qt6ct 
+    - xdg-desktop-portal-hyprland
+    - xdg-desktop-portal-gtk (Reccomended for `file picker` in Hyprland Wiki)
+    - bluetooth packages (? - required more testing)
+    - wl-clipboard : Enable *neovim* system compatible clipboard
+    - htop : Process Manager
 </details>
+
+
 Supporting Packages
 - git
 - yay
