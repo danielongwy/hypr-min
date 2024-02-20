@@ -31,6 +31,7 @@ Core Packages
 <summary>
     Supporting Packages
 </summary>
+
     - git
     - yay
     - qt5-wayland
