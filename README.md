@@ -204,3 +204,5 @@ systemctl reboot
 ## References:
 https://github.com/astonish-g/hypr-catppuccin-dotfiles/tree/main
 https://github.com/ericmurphyxyz/dotfiles
+
+https://github.com/JohnOberhauser/Varda-Theme/tree/main/hypr/scripts/screenshots

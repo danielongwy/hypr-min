@@ -14,6 +14,8 @@ sudo pacman -Syu
 # Install yay (external script)
 source ./scripts/install_yay.sh
 
+
+# Install flow: Dependencies > Core > Core_Addons
 supporting_packages=(
 	qt5-wayland
 	qt6-wayland
@@ -57,9 +59,11 @@ themeing=(
 	nwg-look-bin
 	kvantum
 	papirus-icon-theme
+	noto-fonts
 	noto-fonts-emoji
 	noto-fonts-cjk
 	ttf-firacode-nerd
+	ttf-jetbrains-mono-nerd
 )
 
 
