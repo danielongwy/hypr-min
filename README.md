@@ -2,9 +2,8 @@
 Minimal installation of Hyprland(Repo) + Arch Linux
 
 # Installation
-
+(TODO)
 `sh install.sh`
-
 For nvidia see ....
 
 # Features
@@ -32,21 +31,6 @@ Core Packages
     Supporting Packages
 </summary>
 
-    - git
-    - yay
-    - qt5-wayland
-    - qt6-wayland
-    - qt5ct
-    - qt6ct 
-    - xdg-desktop-portal-hyprland
-    - xdg-desktop-portal-gtk (Reccomended for `file picker` in Hyprland Wiki)
-    - bluetooth packages (? - required more testing)
-    - wl-clipboard : Enable *neovim* system compatible clipboard
-    - htop : Process Manager
-</details>
-
-
-Supporting Packages
 - git
 - yay
 - qt5-wayland
@@ -64,6 +48,7 @@ Supporting Packages
 - kvantum
 - hyprpicker-git
 
+</details>
 
 Thunar
 - thunar-volman, gvfs | Support for mounting devices
@@ -96,8 +81,6 @@ Debug Tools (not needed for main install):
 
 
 <br/>
-
-
 
 
 # Important Notes
@@ -190,9 +173,13 @@ Once done reboot your system
 systemctl reboot
 ```
 
-## Future Reference/Personalisation
-- [Auto-login on TTY1](https://wiki.archlinux.org/title/Getty#Automatic_login_to_virtual_console)
 
+# TODO | Future Reference/Personalisation
+- [Auto-login on TTY1](https://wiki.archlinux.org/title/Getty#Automatic_login_to_virtual_console)
+- Waybar (EricMurphy things maybe)
+- Screenshot base on hyprland wii
+- hyprland conf workspace startup (hyprland wiki has a nice script)
+- Improve Hyprland Install script base on HyprV4
 
 
 [comment]: <> (This is a comment, it will not be included)
