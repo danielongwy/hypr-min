@@ -14,12 +14,11 @@ Core Packages
 - Wallpaper: **hyprpaper**
 - Status Bar: **waybar**
 - Notification Daemon: **dunst**
-- Screenshot: **?**
-- Screenlocker: **swaylock-effects**
-- Logout Handler: **wlogout**
+- Screenshot: **grim** + **slurp**
+- Screenlocker: **swaylock-effects** (Not installed 21 02 2024 has bugs)
+- Logout Handler: **wlogout** (Not installed)
 - Image Viewer: **imv**
 - Video Player: **mpv**
-- PDF Viewer: **?**
 - Audio: **pipeware** && **wireplumber**
 - Shell: **bash** + **starship**
 - Task Manager: **btop**
@@ -47,7 +46,6 @@ Core Packages
 - nwg-look-bin
 - kvantum
 - hyprpicker-git
-
 </details>
 
 Thunar
@@ -180,7 +178,7 @@ systemctl reboot
 - Screenshot base on hyprland wii
 - hyprland conf workspace startup (hyprland wiki has a nice script)
 - Improve Hyprland Install script base on HyprV4
-
+- Look through (https://github.com/0bCdian/Hyprland_dotfiles/tree/gruvboxy)
 
 [comment]: <> (This is a comment, it will not be included)
 [comment]: <> (in  the output file unless you use it in)
