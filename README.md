@@ -45,13 +45,11 @@ Core Packages
     - nwg-look-bin
     - kvantum
     - hyprpicker-git
+    - thunar-volman, gvfs | Support for mounting devices
+    - thunar-archieve-plugins & xarchiver | Allows for right-click extract functions
+    - tumbler | Adds preview thumbnails to thunar
 </details>
 
-Thunar
-- thunar-volman, gvfs | Support for mounting devices
-- thunar-archieve-plugins & xarchiver | Allows for right-click extract functions
-- tumbler | Adds preview thumbnails to thunar
-<br/>
 
 
 # Theming
