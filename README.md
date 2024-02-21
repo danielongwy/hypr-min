@@ -29,7 +29,6 @@ Core Packages
 <summary>
     Supporting Packages
 </summary>
-```
 - git
 - yay
 - qt5-wayland
@@ -46,7 +45,6 @@ Core Packages
 - nwg-look-bin
 - kvantum
 - hyprpicker-git
-```
 </details>
 
 Thunar
