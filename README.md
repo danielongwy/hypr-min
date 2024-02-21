@@ -29,22 +29,23 @@ Core Packages
 <summary>
     Supporting Packages
 </summary>
-- git
-- yay
-- qt5-wayland
-- qt6-wayland
-- qt5ct
-- qt6ct 
-- xdg-desktop-portal-hyprland
-- xdg-desktop-portal-gtk (Reccomended for `file picker` in Hyprland Wiki)
-- bluetooth packages (? - required more testing)
-- wl-clipboard : Enable *neovim* system compatible clipboard
-- htop : Process Manager
-- xdg-user-dirs : File manager support for common directories
-- udiskie (? double check if needed for mounting)
-- nwg-look-bin
-- kvantum
-- hyprpicker-git
+    
+    - git
+    - yay
+    - qt5-wayland
+    - qt6-wayland
+    - qt5ct
+    - qt6ct 
+    - xdg-desktop-portal-hyprland
+    - xdg-desktop-portal-gtk (Reccomended for `file picker` in Hyprland Wiki)
+    - bluetooth packages (? - required more testing)
+    - wl-clipboard : Enable *neovim* system compatible clipboard
+    - htop : Process Manager
+    - xdg-user-dirs : File manager support for common directories
+    - udiskie (? double check if needed for mounting)
+    - nwg-look-bin
+    - kvantum
+    - hyprpicker-git
 </details>
 
 Thunar
